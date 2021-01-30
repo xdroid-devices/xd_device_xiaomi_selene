@@ -400,6 +400,7 @@ PRODUCT_PACKAGES += \
     init.wlan_drv.rc \
     init.project.rc \
     init.sensor_1_0.rc \
+    init.safailnet.rc \
     meta_init.connectivity.rc \
     meta_init.modem.rc \
     meta_init.project.rc \
