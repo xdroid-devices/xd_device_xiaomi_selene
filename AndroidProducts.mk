@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/nad_selene.mk
+   $(LOCAL_DIR)/xdroid_selene.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_selene-user \
-    nad_selene-userdebug \
-    nad_selene-eng
+    xdroid_selene-user \
+    xdroid_selene-userdebug \
+    xdroid_selene-eng

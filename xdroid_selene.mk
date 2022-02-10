@@ -17,13 +17,11 @@
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 2340
-TARGET_BOOT_ANIMATION_RES := 1080
 
-# Gapps
-USE_GAPPS := true
-TARGET_GAPPS_ARCH := arm64
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-IS_PHONE := true
+# Xdroid Stuff
+XDROID_BOOT_DARK := true
+XDROID_BOOT := 1080
+XDROID_MAINTAINER := Mikazuuu07
 
 # Inherit from selene device makefile
 $(call inherit-product, device/xiaomi/selene/device.mk)
@@ -34,7 +32,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+$(call inherit-product, vendor/xdroid/config/common.mk)
 
 #
 # All components inherited here go to system_ext image
@@ -44,7 +42,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := selene
-PRODUCT_NAME := nad_selene
+PRODUCT_NAME := xdroid_selene
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := xiaomi
 
